@@ -12,4 +12,4 @@ with Diagram("Web Services", show=False, outformat="dot"):
 '''
 
 with Diagram(filename="web_services", outformat=["png", "dot"], show=False):
-    (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb")
+    (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb") >> S3("datalake")
