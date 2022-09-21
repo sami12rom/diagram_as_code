@@ -11,6 +11,5 @@ with Diagram("Web Services", show=False, outformat="dot"):
     (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb")
 '''
 
-with Diagram(filename="web_services.dot", outformat=["jpg", "dot"], show=True):
+with Diagram(filename="web_services", outformat=["png", "dot"], show=False):
     (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb")
-    
